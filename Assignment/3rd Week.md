@@ -377,8 +377,8 @@
 기타를 제외하고 지정한 5개의 그룹 하위 목들만을 이용해 아래와 같이 지역별 누적 막대그래프를 그려봐주세요.
 ```
 <div style="display: flex; justify-content: center; gap: 10px;">
-    <img src="/3rd_week_img/A2.png" alt="Image 1" style="width: 480px; height: auto;">
-    <img src="/3rd_week_img/A2_1.png" alt="Image 2" style="width: 480px; height: auto;">
+    <img src="/3rd_week_img/A2.png" alt="Image 1" style="width: 600px; height: auto;">
+    <img src="/3rd_week_img/A2_1.png" alt="Image 2" style="width: 600px; height: auto;">
 </div>
 
 ![image](https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/3rd%20study/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-09-18%20%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE%204.37.55.png?raw=true)
