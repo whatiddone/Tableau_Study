@@ -120,7 +120,7 @@
 - Ctrl 키와 함께 다른 필드 => 레이블 (레이블 세부 설정에서 텍스트 순서 변경 가능)
 
 #### 카테고리별 연도매출을 백분율로 표현하기
-![백분율](../image/s1.png)
+![백분율](../image/2nd_week_image/s1.png)
 1. 행 선반의 매출 필드를 우클릭 => 퀵 테이블 계산 => 구성비율
 2. 행 선반의 합계 클릭+Ctrl => 마크의 합계로 드래그&드롭
 
@@ -151,7 +151,7 @@
 3. 필드를 선반에 넣을 때 변경
 - 필드를 '우클릭'하여 선반으로 이동 => 필드 데이터 유형 선택 가능
 
-![연속형](../image/s2.png)
+![연속형](../image/2nd_week_image/s2.png)
 
 ![그라데이션](https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/2nd%20study/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-09-12%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.54.19.png?raw=true)
 
@@ -161,7 +161,7 @@
 열 선반의 필드를 연속형으로 설정했기 때문이다. 
 불연속형으로 설정한다면 아래와 같다.
 ```
-![불연속형](../image/s3.png)
+![불연속형](../image/2nd_week_image/s3.png)
 
 
 ## 15강: 누적병렬막대그래프
@@ -169,7 +169,7 @@
 <!-- 누적병렬막대그래프에 관해 배우게 된 점을 적어주세요 -->
 #### 그리는 법
   - 표현방식에서 누적 병렬 막대그래프 선택
-![축누적병렬](../image/s5.png)
+![축누적병렬](../image/2nd_week_image/s5.png)
 
 연도는 연속형일 때와 불연속형일 때의 차이가 크게 없다.
 
@@ -180,7 +180,7 @@
 
 - 행 우클릭 => 이중 축 클릭
 
-![이중 축누적병렬](../image/s4.png)
+![이중 축누적병렬](../image/2nd_week_image/s4.png)
 
 
 ![screen](https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/2nd%20study/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-09-12%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%201.57.52.png?raw=true)
@@ -235,18 +235,18 @@ Longitude - 경도
 Latitude - 위도
 ```
 도시, 시/도, 국가/지역 필드는 데이터 원본에서 데이터 타입을 지리적 역할로 변경하여, 위도/경도 값을 부여한다.
-![지도](../image/a2.png)
+![지도](../image/2nd_week_image/a2.png)
 ```
 각 국가/지역별 매출을 색상으로 표현
 ```
-![map2](../image/a1.png)
+![map2](../image/2nd_week_image/a1.png)
 ```
 각 국가/지역별 매출과 수익을 이중축을 이용하여 표현
 ```
 #### 다양한 위치를 표시하는 법: 마크 계층
 맵에 여러 계층의 지리적 데이터를 추가하는 경우에는 마크 계층을 활용할 수 있다.
 마크 계층은 투명 오버레이처럼 작동하며 각 계층은 고유한 마크와 캡션, 색상 등을 가질 수가 있다.
-![amp](../image/a3.png)
+![amp](../image/2nd_week_image/a3.png)
 ```
 마크 계층을 활용하여 각 국가/지역별 매출과 각 시/도별 수익을 표현
 ```
@@ -259,8 +259,8 @@ Latitude - 위도
 마크-텍스트에 드래그&드롭
 ```
 <div style="display: flex; justify-content: space-between;">
-    <img src="../image/b1.png" alt="Image 1" style="width: 48%;"/>
-    <img src="../image/b2.png" alt="Image 2" style="width: 48%;"/>
+    <img src="../image/2nd_week_image/b1.png" alt="Image 1" style="width: 48%;"/>
+    <img src="../image/2nd_week_image/b2.png" alt="Image 2" style="width: 48%;"/>
 </div>
 
 **분석-소계를 이용하면 각 행/열 데이터의 합을 구할 수 있다.**
@@ -278,11 +278,11 @@ Latitude - 위도
 ```
 각 범주별 매출 비교
 ```
-![ssamp](../image/c1.png)
+![ssamp](../image/2nd_week_image/c1.png)
 ```
 매출 상위 10개 상품
 ```
-![amffp](../image/c2.png)
+![amffp](../image/2nd_week_image/c2.png)
 #### 하이라이트 테이블
 - 색상이 입혀진 특수 테이블
 - 범주형 데이터를 색상으로 비교 가능
@@ -290,11 +290,11 @@ Latitude - 위도
 ```
 테이블 작성
 ```
-![c3](../image/c3.png)
+![c3](../image/2nd_week_image/c3.png)
 ```
 색상 적용
 ```
-![c4](../image/c4.png)
+![c4](../image/2nd_week_image/c4.png)
 ```
 별도의 범례 사용
 ```
@@ -314,15 +314,15 @@ Latitude - 위도
 지민이를 도와주세요! (풀이를 찾아가는 과정을 기술해주세요)
 ```
 1. 국가/지역 'South Korea' 필터링
-![d1](../image/d1.png)
+![d1](../image/2nd_week_image/d1.png)
 <br>
 
 2. 각 하위범주가 매출의 비율 중 얼마만큼을 차지하는지 트리맵으로 확인
-![d2](../image/d2.png)
+![d2](../image/2nd_week_image/d2.png)
 <br>
 
 3. 각 트리맵에 해당 범주의 이름과 해당 범주가 차지하는 비율 표시
-![d3](../image/d3.png)
+![d3](../image/2nd_week_image/d3.png)
 
 ## 문제2
 
@@ -339,11 +339,11 @@ https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/
 레퍼런스와 꼭 같지 않아도 자유롭게 표현하고, 그 과정을 기술해주세요.
 ```
 1. 한중일로 필터링
-![d4](../image/d4.png)
+![d4](../image/2nd_week_image/d4.png)
 2. 3개국의 매출과 수익 비교
-![d5](../image/d5.png)
+![d5](../image/2nd_week_image/d5.png)
 3. '2번' 상태에서 이중축을 걸어봤는데 너무 좁아서 안 보이길래 국가/지역을 행 선반으로 옮겼습니다~
-![d6](../image/d6.png)
+![d6](../image/2nd_week_image/d6.png)
 
 
 
@@ -359,4 +359,4 @@ https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/
 [참고 외부자료 링크는여기를클릭하십시다](https://velog.io/@eunsuh/Tableau-%EB%A0%88%EB%B2%A8UP-%EA%B0%95%EC%9D%98-%EC%A0%95%EB%A6%AC-1-%ED%85%8C%EC%9D%B4%EB%B8%94-%EA%B3%84%EC%82%B0)
 
 
-[def]: ..image/t1.png
+[def]: ..image/2nd_week_image/t1.png
