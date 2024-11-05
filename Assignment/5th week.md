@@ -396,8 +396,32 @@ FIXED는 차원 필터의 영향을 받지 않음
 4) 각 상품이 배송까지 걸린 날 수를 표현하고
 5) 그리고 만약 배송이 각 나라/범주별 평균보다 빨랐다면 '빠름', 같다면 '평균', 느리다면 '느림' 으로 print 해주세요. 
 ```
+```
+계산된 필드 만들기: 나라별/범주별 평균 배송기간
+배송 기간: DATEDIFF('day',[주문 날짜], [배송 날짜])
+나라별 평균 배송기간: {FIXED [국가/지역]: AVG([배송 기간])}
+범주별 평균 배송기간: {FIXED [범주]: AVG([배송 기간])}
+나라별/범주별 평균 배송 기간: {FIXED [], [범주]: AVG([배송 기간])}
+배송 속도 수준: IF [배송 기간] < {FIXED [국가/지역], [범주]: AVG([배송 기간])} THEN "빠름"
+ELSEIF [배송 기간] = {FIXED [국가/지역], [범주]: AVG([배송 기간])} THEN "평균"
+ELSE "느림"
+END
 
-![이미지주소](https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/2nd%20study/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA%202024-08-13%20%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB%2010.12.36.png?raw=true)
+# 각 나라에서 가장 많이 주문한 사람 구하기 with 지피티
+1. 고객별 주문 횟수 계산: 먼저 각 고객의 주문 횟수를 계산합니다.
+{FIXED [국가/지역], [고객 이름]: COUNT([주문 Id])}
+
+2. 나라별 최대 주문 횟수 계산: 각 나라에서 가장 많이 주문한 사람을 찾기 위해 나라별 최대 주문 횟수를 계산합니다.
+{FIXED [국가/지역]: MAX({FIXED [국가/지역], [고객 이름]: COUNT([주문 Id])})}
+
+3. 최다 주문 고객 식별: 이제 각 고객의 주문 횟수가 나라별 최대 주문 횟수와 같은지 비교하여 최다 주문 고객을 식별합니다.
+IF {FIXED [국가/지역], [고객 이름]: COUNT([주문 Id])} = {FIXED [국가/지역]: MAX({FIXED [국가/지역], [고객 이름]: COUNT([주문 Id])})} THEN "최다 주문 고객"
+ELSE ""
+END
+
+```
+![이미지주소](/image/5th_week_image/Q1.png)
+
 
 <!-- 여기까지 오는 과정 중 알게 된 점을 기입하고, 결과는 시트 명을 본인 이름으로 바꾸어 표시해주세요.-->
 
@@ -410,6 +434,28 @@ FIXED는 차원 필터의 영향을 받지 않음
 
  어떤 값이 각 지표의 평균보다 낮은 값을 갖고 있다면 색깔을 주황색으로, 그것보다 높다면 파란색으로 표시하고 싶어요. 그 평균값은 각 지표별로 달라야 해요.
 ```
+![이미지주소](/image/5th_week_image/Q2_1.png)
+
+```
+# 매개변수로 계산된 필드 만들기
+CASE [매개 변수].[대시보드]
+WHEN "수익" THEN [수익]
+WHEN "매출" THEN [매출]
+WHEN "수량" THEN [수량]
+END
+
+# 평균 계산 필드 만들기
+CASE [지표 선택]
+  WHEN "수익" THEN AVG([수익])
+  WHEN "매출" THEN AVG([매출])
+  WHEN "수량" THEN AVG([수량])
+END
+
+# 색 바꾸기
+```
+
+# EXCLUDE랑 CASE를 잘 쓰면 될 것 같은데... 교육팀장님 도와주세요...
+  ![43_7](/image/5th_week_image/43_7.png)
 
 ![example](https://github.com/yousrchive/BUSINESS-INTELLIGENCE-TABLEAU/blob/main/study/img/2nd%20study/%E1%84%83%E1%85%A1%E1%84%8B%E1%85%AE%E1%86%AB%E1%84%85%E1%85%A9%E1%84%83%E1%85%B3.png?raw=true)
 
