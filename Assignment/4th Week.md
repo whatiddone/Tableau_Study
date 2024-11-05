@@ -46,32 +46,32 @@
 ## 30. 계층
 - 뷰에서 데이터를 'Drill Down'해 값을 세부적으로 찾을 때 유용한 방법
 - 날짜 데이터가 있는 경우, 자동으로 계층이 생성된다.
-![30_1](/image/4th_week_img/30_1.png)
+![30_1](/image/4th_week_image/30_1.png)
 ```
 년, 분기, 월이 계층구조로 이루어져 있다.
 ```
-![30_2](/image/4th_week_img/30_2.png)
+![30_2](/image/4th_week_image/30_2.png)
 ```
 계층 구성하는 법
 ```
-![30_3](/image/4th_week_img/30_3.png)
+![30_3](/image/4th_week_image/30_3.png)
 ```
 '국가/지역','시/도','지역','도시'를 계층으로 묶어 '위치'필드 구성
 ```
 
 ## 31. 집합
 - 사용자가 직접 어떤 조건을 설정하고, 그 조건을 기반으로 데이터들을 구분하는 방법
-![31_1](/image/4th_week_img/31_1.png)
+![31_1](/image/4th_week_image/31_1.png)
 ```
 집합 만드는 법
 ```
-![31_2](/image/4th_week_img/31_2.png)
+![31_2](/image/4th_week_image/31_2.png)
 ```
 일반: 그룹 기능과 비슷하게 수동으로 데이터를 선택 
 조건: 설정 조건에 충족되는 데이터를 묶어줌
 상위: 테이블마다 상위/하위 N개 데이터를 묶어줌
 ```
-![31_3](/image/4th_week_img/31_3.png)
+![31_3](/image/4th_week_image/31_3.png)
 ```
 '수익 기준 상위 기준' 집합 생성(차원으로 생성)
 마크>색상으로 드래그&드롭하면 집합에 포함되는 행을 색으로 구분 가능
@@ -89,12 +89,12 @@
 집합 만들기
 ```
 
-![32_3](/image/4th_week_img/32_3.png)
+![32_3](/image/4th_week_image/32_3.png)
 ```
 생성한 집합 우클릭>결합된 집합 만들기
 문제에서 요구한 조건 잘 보고, 결합된 집합 형태 선택하기
 ```
-![32_4](/image/4th_week_img/32_4.png)
+![32_4](/image/4th_week_image/32_4.png)
 ```
 결합조건으로 표현
 ```
@@ -105,14 +105,14 @@
 - 계산해야할 데이터가 추가로 필요한 경우에 만들어 사용
 #### 만드는 방법
 1. 데이터 패널을 통해 생성
-![33_1](/image/4th_week_img/33_1.png)
+![33_1](/image/4th_week_image/33_1.png)
 2. 분석 탭을 활용해 생성
-![33_2](/image/4th_week_img/33_2.png)
+![33_2](/image/4th_week_image/33_2.png)
 3. 사용하고자 하는 필드 위에 마우스 우클릭
-![33_3](/image/4th_week_img/33_3.png)
+![33_3](/image/4th_week_image/33_3.png)
 
 - 함수 입력하기
-![33_4](/image/4th_week_img/33_4.png)
+![33_4](/image/4th_week_image/33_4.png)
 ```
 '전체' 드롭다운 클릭하면, 카테고리별 함수 또한 확인 가능
 ```
@@ -120,7 +120,7 @@
 - 필드 입력하기
 1. 필드 드래그&드랍
 2. 입력창에 필드 입력
-![33_5](/image/4th_week_img/33_5.png)
+![33_5](/image/4th_week_image/33_5.png)
 ```
 # 필드 입력할 때는 []: 대괄호 사용
 # 텍스트 입력할 때는 '': 작은 따옴표 사용
@@ -128,15 +128,15 @@
 # 주석 입력할 때는 "//" 입력 후 작성
 ```
 #### 실습
-![33_6](/image/4th_week_img/33_6.png)
+![33_6](/image/4th_week_image/33_6.png)
 ```
 집계함수를 활용해 계산
 ```
-![33_7](/image/4th_week_img/33_7.png)
+![33_7](/image/4th_week_image/33_7.png)
 ```
 숫자 형식 백분율로 변경
 ```
-![33_8](/image/4th_week_img/33_8.png)
+![33_8](/image/4th_week_image/33_8.png)
 ```
 제품 이름별 수익률
 ```
@@ -152,14 +152,14 @@
   ```
 
 1. 고객 이름, 성 분리
-![34_1](/image/4th_week_img/34_1.png)
+![34_1](/image/4th_week_image/34_1.png)
 ```
 고객 이름: SPLIT([고객 이름], ' ', 1)
 고객 성: SPLIT([고객 이름], ' ', 2)
 ```
 
 2. 수익성 계산
-![34_2](/image/4th_week_img/34_2.png)
+![34_2](/image/4th_week_image/34_2.png)
 ```
 IF [수익] > 0 THEN '수익성 있음'
 ELSEIF [수익] < 0 THEN '수익성 없음'
@@ -168,7 +168,7 @@ END
 ```
 
 3. 주문 처리 일수 계산
-![34_3](/image/4th_week_img/34_3.png)
+![34_3](/image/4th_week_image/34_3.png)
 ```
 DATEDIFF('day',[주문 날짜], [배송 날짜])
 # YMD로 바꾸는 방법: 우클릭>불연속형 필드 중 더 보기>사용자 지정>연/월/일
@@ -180,14 +180,14 @@ DATEDIFF('day',[주문 날짜], [배송 날짜])
 
 ## 35. 집계계산
 - 현재 뷰에서 보이는 **기준**으로 계산하는 방식
-![35_1](/image/4th_week_img/35_1.png)
+![35_1](/image/4th_week_image/35_1.png)
 ```
 sum([매출]): 합계 매출 집계 계산
 # 사용자가 집계 계산된 필드를 만들면 해당 필드에 "집계"를 나타내고, 집계 방법을 변경할 수가 없다.
 ```
 
 1. 연도별 주문 건수
-![35_2](/image/4th_week_img/35_2.png)
+![35_2](/image/4th_week_image/35_2.png)
 ```
 COUNTID([주문 Id])
 ```
@@ -197,7 +197,7 @@ COUNTID([주문 Id])
 - 데이터 원본에 대한 계산이 아닌, 뷰에 보이는 내용을 바탕으로 데이터를 계산
 
 1. 각 월마다의 연도별 누적 매출
-![36_1](/image/4th_week_img/36_1.png)
+![36_1](/image/4th_week_image/36_1.png)
 ```
 RUNNING_SUM(sum([매출]))
 # 계산된 필드>테이블 계산에서 함수 고르기
@@ -208,7 +208,7 @@ RUNNING_SUM(sum([매출]))
     - 계산된 필드 마우스 우클릭>테이블 계산 편집옵션을 선택하여 변경
 
 2. 현재 달과 전 월의 매출 차이
-![36_2](/image/4th_week_img/36_2.png)
+![36_2](/image/4th_week_image/36_2.png)
 ```
 sum([매출])-LOOKUP(sum([매출]), -1)
 ```
@@ -221,26 +221,26 @@ sum([매출])-LOOKUP(sum([매출]), -1)
 1. 누계: 집계한 값을 누적한 값으로 한 번 더 집계하는 계산 유형
     
     예) 분기별 누적 매출 차트&월별 매출 차트
-    ![37_1](/image/4th_week_img/37_1.png)
+    ![37_1](/image/4th_week_image/37_1.png)
     ```
     행 선반의 필드를 더블클릭하여 적용된 함수 확인 가능
     ```
 2. 차이: 측정값이 기준 값과 어느 정도차이가 나는지 구하는 계산 유형
 
     예) 각 제품에 대한 연도별 매출 차이
-    ![37_2](/image/4th_week_img/37_2.png)
+    ![37_2](/image/4th_week_image/37_2.png)
     ```
     우클릭>기준 통해 기준값 설정 가능
     ```
 3. 비율 차이: 측정값들 사이의 성장률 또는 % 차이를 표현
 
     예) 월별 수익 차이를 %로 표현
-    ![37_3](/image/4th_week_img/37_3.png)
+    ![37_3](/image/4th_week_image/37_3.png)
 
 4. 구성비율: 전체에서 각 항목들의 비중을 확인할 때 활용
 
     예) 지역별 제품 매출 순위와 구성비율
-    ![37_4](/image/4th_week_img/37_4.png)
+    ![37_4](/image/4th_week_image/37_4.png)
     ```
     다음을 사용하여 계산>패널(아래로) 사용
     ```
@@ -248,29 +248,29 @@ sum([매출])-LOOKUP(sum([매출]), -1)
 5. 백분위수: 전체에서 각 멤버들의 백분위수 표현
 
     예) 매출이 많은 고객과 매출이 적은 고객 확인
-    ![37_5](/image/4th_week_img/37_5.png)
+    ![37_5](/image/4th_week_image/37_5.png)
     
 <!-- 퀵테이블 계산의 원리 및 예제에 대해 알게 된 점을 적어주세요. -->
 
 ## 38. 퀵테이블계산(2)
 1. 이동평균: 이전의 값부터 현재까지 값에 대한 평균을 낼 때 사용. 주식에서 많이 활용
-    ![38_1](/image/4th_week_img/38_1.png)
+    ![38_1](/image/4th_week_image/38_1.png)
     - 2개 분기 이동평균선
 
-    ![38_2](/image/4th_week_img/38_2.png)
+    ![38_2](/image/4th_week_image/38_2.png)
 
 2. YTD(Year to Date) 총계: 특정 시점을 기준으로 해당 연도부터 그 시점까지의 총계. '연'보다 하위 레벨 필드인 '분기','월'이 있어야 사용 가능
-    ![38_3](/image/4th_week_img/38_3.png)
+    ![38_3](/image/4th_week_image/38_3.png)
 
 3. 통합 성장률(Compound Growth Rate): 특정 기간 동안의 성장률을 나타내는 지표. 경제나 산업 등의 성장률을 계산할 때 주로 사용. 경제 성장률처럼 여러 기간의 성장률을 통합해 평균을 계산할 때 기하평균을 사용(단기 데이터의 경우 산술평균 사용하는 경우도 존재)
-    ![38_4](/image/4th_week_img/38_4.png)
+    ![38_4](/image/4th_week_image/38_4.png)
 
 4. 전년 대비 성장률(Year Over Year Growth,YoY)
-    ![38_5](/image/4th_week_img/38_5.png)
+    ![38_5](/image/4th_week_image/38_5.png)
 
 5. YTD 성장률(Year to Date Growth)
  성장률 안에는 총계가 숨어있다.(YTD 총계를 먼저 구한 후, YTD 성장률을 구함)
-    ![38_6](/image/4th_week_img/38_6.png)
+    ![38_6](/image/4th_week_image/38_6.png)
 
 #### YoY 성장률=(올해 값-전년도 같은 시점의 값)/(전년도 같은 시점의 값)×100
 #### YTD 성장률=(올해 1월 1일부터 현재 시점까지의 누적 값−전년 같은 기간 누적 값)/(전년 같은 기간 누적 값)×100
@@ -299,12 +299,12 @@ sum([매출])-LOOKUP(sum([매출]), -1)
     <img src="/img/4th_week_img/Q1_2.png" alt="Image 1" style="width: 480px; height: auto;">
     <img src="/img/4th_week_img/Q1_3.png" alt="Image 2" style="width: 480px; height: auto;">
 </div>
-![Q1_4](/img/4th_week_img/Q1_4.png)
+![Q1_4](/img/4th_week_image/Q1_4.png)
 
 ```
 각 집합 만들기, 결합집합 만들기
 ```
-![Q1_5](/image/4th_week_img/Q1_4.png)
+![Q1_5](/image/4th_week_image/Q1_4.png)
 
 - 한 눈에 보기 쉽게, 결합집합을 필터로 설정
 
@@ -334,7 +334,7 @@ ID-2021-11126을 보니, 11월 26일 배송에 11월 30일 배송이면 4일 차
 ```
 '주문 처리 일수'필드를 차원으로 바꾸면 해결된다.
 ```
-![Q2_1](/image/4th_week_img/Q2_1.png)
+![Q2_1](/image/4th_week_image/Q2_1.png)
 
 
 ## 문제 3.
