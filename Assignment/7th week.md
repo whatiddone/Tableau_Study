@@ -209,19 +209,183 @@ END
 ## 64. 트리맵 드릴다운
 
 <!-- 트리맵 드릴다운에 대해 알게 된 점을 적어주세요 -->
+### [Category]-[Sub_Category]-[Manufacturer] 순서로 이어지는 트리맵 생성
+#### [Category]-[Sub_Category] 드릴다운 생성
+![img](/image/6th_week_image/64_1.png)
 ```
-[Category]-[Sub_Category]-[Manufacturer] 순서로 이어지는 트리맵 생성
+카테고리별 매출 트리맵 생성
 ```
-## 65. 파이 차트 드릴다운
+![img](/image/6th_week_image/64_2.png)
+```
+카테고리 집합 생성
+```
+```
+# 계산된 필드(드릴다운 1) 생성: IF 문을 활용하여 [Category 집합]일 경우 [Sub-category]로 드릴다운되고 그렇지 않을 경우 [Category]가 되는 함수 생성
 
+IF [Category 집합] THEN [Sub-Category]
+ELSE [Category]
+END
+```
+![img](/image/6th_week_image/64_3.png)
+```
+집합 동작을 편집하여 [Category]를 선택하면 [Sub-Category]로 드릴다운이 되는 동작 생성
+```
+마크>레이블에 [드릴다운 1] 드래그&드롭
+![img](/image/6th_week_image/64_4.png)
+
+#### [Category]-[Sub_Category]-[Manufacturer] 드릴다운 생성
+![img](/image/6th_week_image/64_5.png)
+```
+드릴다운 1에서 집합 생성
+```
+```
+# 계산된 필드(드릴다운 2) 생성: IF 문을 활용하여 [드릴다운 1 집합]일 경우 [Manufacturer]로 드릴다운되고 그렇지 않을 경우 아무것도 출력하지 않는 함수 생성
+
+IF [드릴다운 1 집합] THEN [Manufacturer]
+ELSE ""
+END
+```
+![img](/image/6th_week_image/64_6.png)
+```
+집합 동작을 편집하여 [Sub-Category]를 선택하면 [Manufacturer]로 드릴다운이 되는 동작 생성
+```
+마크>레이블에 [드릴다운 2] 드래그&드롭
+![img](/image/6th_week_image/64_7.png)
+
+#### 트리맵의 레이블이 중복되는 것을 방지하는 계산된 필드 생성
+```
+# 드릴다운 1 레이블
+IF [Category 집합] THEN [Sub-Category]
+ELSE ""
+END
+```
+마크>레이블에 [드릴다운 1 레이블] 드래그&드롭
+![img](/image/6th_week_image/64_8.png)
+
+## 65. 파이 차트 드릴다운
 <!-- 파일 차트 드릴다운에 대해 알게 된 점을 적어주세요 -->
+### [Category]-[Sub_Category] 순서로 이어지는 파이차트 생성
+![img](/image/6th_week_image/65_1.png)
+```
+카테고리별 매출 파이차트 생성
+```
+![img](/image/6th_week_image/65_2.png)
+```
+카테고리 집합 생성
+```
+```
+# 계산된 필드(드릴다운 1) 생성: IF 문을 활용하여 [Category 집합]일 경우 [Sub_Category]로 드릴다운되고 그렇지 않을 경우 [Category]가 되는 함수 생성
+
+IF [Category 집합] THEN [Sub-Category]
+ELSE [Category]
+END
+```
+![img](/image/6th_week_image/65_3.png)
+```
+집합 동작을 편집하여 [Category]를 선택하면 [Sub_Category]로 드릴다운이 되는 동작 생성
+```
+마크에서 합계(Sales) 크기 삭제>세부정보에 [드릴다운 1] 드래그&드롭>드릴다운 1을 색상으로 변경
+![img]()
+<div style="display: flex;">
+  <img src="/image/6th_week_image/65_4.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/6th_week_image/65_5.png" alt="이미지 2">
+</div>
+```
+카테고리와 드릴다운 1 내림차순 정렬
+```
+
+![img](/image/6th_week_image/65_6.png)
+---
+![img](/image/6th_week_image/65_7.png)
+```
+행 선반 더블클릭하여 임의의 축 생성 -> Ctrl 키 이용하여 하나 더 생성
+
+마크에서 드릴다운 1 색상 제거 후 크기 조정
+```
+![img](/image/6th_week_image/65_8.png)
+```
+이중 축 생성
+```
+```
+# 계산된 필드(드릴다운 1 레이블) 생성
+IF [Category 집합] THEN [Sub_Category]
+ELSE ""
+END
+```
+두 번째 축의 마크>레이블에 [드릴다운 1 레이블] 드래그&드롭 <br>
+행 구분선/열 구분선/0 기준선/격자선 없음 처리, 머리글 해제
+![img](/image/6th_week_image/65_9.png)
 
 ## 66. 지도 드릴다운
-
 <!-- 지도 드릴다운에 대해 알게 된 점을 적어주세요 -->
+### [국가/지역]-[시/도] 순서로 이어지는 지도 그래프 생성
+![img](/image/6th_week_image/65_1.png)
+```
+국가/지역 맵 생성
+```
+![img](/image/6th_week_image/65_2.png)
+```
+국가/지역 집합 생성
+```
+```
+# 계산된 필드(드릴다운 1) 생성: IF 문을 활용하여 [국가/지역 집합]일 경우 [시/도]로 드릴다운되고 그렇지 않을 경우 [국가/지역]이 되는 함수 생성
 
----
+IF [국가/지역 집합] THEN [시/도]
+ELSE [국가/지역]
+END
 
+*계산된 필드에 [지리적 역할]>[만들기 원본]>[시/도]로 지리적 역할 부여
+```
+![img](/image/6th_week_image/65_3.png)
+```
+집합 동작을 편집하여 [국가/지역]을 선택하면 [시/도]로 드릴다운이 되는 동작 생성
+```
+마크>색상에 [드릴다운 1] 드래그&드롭
+![img]()
+<div style="display: flex;">
+  <img src="/image/6th_week_image/66_4.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/6th_week_image/66_5.png" alt="이미지 2">
+</div>
+```
+국가별로 색상이 구분된 것과, 국가 클릭시 시/도 별로 드릴다운이 되는 것을 확인할 수 있다.
+```
+
+### 매개변수를 이용하여 드릴다운과 선택한 [국가/지역]만 필터링 되는 작업을 동시에 진행
+![img](/image/6th_week_image/66_6.png)
+```
+매개변수 생성
+```
+```
+# 계산된 필드(선택된 국가/지역) 생성: IF/ELSE 문을 사용해서 [국가/지역]과 [매개 변수 국가/지역]이 일치할 경우와 [매개 변수 국가/지역]이'ALL'값일 경우에 TRUE를 출력하고, 그 이외의 경우에는 FALSE를 출력
+
+IF [매개 변수 국가/지역] = [국가/지역] THEN TRUE
+ELSEIF [매개 변수 국가/지역] = 'All' THEN TRUE
+ELSE FALSE
+END
+```
+```
+매개변수 표시 이후, 매개변수 국가/지역>ALL 로 설정
+```
+![img](/image/6th_week_image/66_7.png)
+```
+선택된 국가/지역 필드로 필터 생성>참 선택
+```
+![img](/image/6th_week_image/66_8.png)
+```
+계산된 필드를 실행하는데 필요한 동작 생성
+```
+![img](/image/6th_week_image/66_9.png)
+```
+도구 설명 편집: 국가/지역 삭제
+```
+![img]()
+<div style="display: flex;">
+  <img src="/image/6th_week_image/66_10.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/6th_week_image/66_11.png" alt="이미지 2">
+</div>
+```
+드롭다운을 실시할 때, 선택된 도시만 확대해서 필터링 됨과 동시에 드릴다운이 진행되며, 도구설명도 국가/지역에서 시/도로 변경되는 것을 확인
+```
 ## 문제
 
 오늘은 별도의 문제가 없습니다.
