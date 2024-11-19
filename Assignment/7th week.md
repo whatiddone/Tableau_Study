@@ -41,7 +41,7 @@ ELSE '+'
 END
 - 제품의 하위 범주와 제조 업체가 모두 집합 내에 있는 경우에만 제품 이름을 표시
 ```
-![img](/image/6th_week_image/58_1.png)
+![img](/image/7th_week_image/58_1.png)
 ```
 빈 대시보드에 순서대로 세로 컨테이너, 빈 페이지, 제품 막대그래프 배치
 ```
@@ -49,18 +49,18 @@ END
 선택한 제품 하위 범주에서 제조 업체를 보여주게 만드는 집합 값 변경 동작 만들기
 - 대시보드>동작>동작 추가>집합 값 변경
 ```
-![img](/image/6th_week_image/58_2.png)
+![img](/image/7th_week_image/58_2.png)
 ```
 하위 범주를 선택하면 하위 범주 집합의 유일한 값으로 설정하며 선택을 취소하면 해당 집합에서 모든 값이 제거된다.
 ```
-![img](/image/6th_week_image/58_3.png)
+![img](/image/7th_week_image/58_3.png)
 ```
 제조 업체를 선택하면 하위 범주 집합의 유일한 값으로 설정하며 선택을 취소하면 해당 집합에서 모든 값이 제거된다.
 ```
 ![img]()
 <div style="display: flex;">
-  <img src="/image/6th_week_image/58_4.png" alt="이미지 1" style="margin-right: 10px;">
-  <img src="/image/6th_week_image/58_5.png" alt="이미지 2">
+  <img src="/image/7th_week_image/58_4.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/7th_week_image/58_5.png" alt="이미지 2">
 </div>
 ```
 하위 범주에서 의자를 선택하면 의자의 제조 업체들이, 제조 업체 중 'Harbour Creations'를 선택하면 회사의 제품들이 뜨는 것을 볼 수 있다.
@@ -68,13 +68,13 @@ END
 
 ### 수익성 대시보드와 매출과 수익 대시보드 연결하기
 - 대시보드>동작>동작 추가>시트로 이동
-![img](/image/6th_week_image/58_6.png)
+![img](/image/7th_week_image/58_6.png)
 - 탐색 버튼을 이용해 수익성 대시보드로 돌아가기
-![img](/image/6th_week_image/58_7.png)
+![img](/image/7th_week_image/58_7.png)
 ```
 완성
 ```
-![img](/image/6th_week_image/58_8.png)
+![img](/image/7th_week_image/58_8.png)
 
 
 ## 59강. 스토리패널
@@ -82,14 +82,14 @@ END
 <!-- 스토리패널 강의에서 알게 된 점을 적어주세요 -->
 ### 스토리패널로 스토리텔링 구현
 - 시트, 대시보드 만드는 곳 옆에 책 모양 아이콘으로 스토리 생성
-![img](/image/6th_week_image/59_1.png)
+![img](/image/7th_week_image/59_1.png)
 왼쪽의 스토리 패널과 오른쪽의 스토리 워크시트 페이지로 구성
 - 스토리 워크시트 안에 시트를 추가하며 스토리 포인트 생성
 - 스토리 포인트:  스토리 각각의 개별 시트
   - 빈 페이지/복제로 다음 스토리 포인트를 생성
 - 스토리 패널: 대시보드, 시트 및 텍스트 설명을 스토리 시트로 가져올 수 있다. + 크기, 제목 표시 여부도 조절 가능
 - 스토리 탐색기&툴 바
-![img](/image/6th_week_image/59_2.png)
+![img](/image/7th_week_image/59_2.png)
 삭제, 되돌리기, 업데이트 적용, 생성이 가능하다.
   - 스토리 포인트에서 시트 혹은 대시보드의 동작 등의 작업을 진행한 뒤, 현재까지의 작업을 시작지점으로 지정하여 작업을 진행할 수 있다.
   - 스토리 탐색기에서 스토리 포인트 편집&구성, 탐색기를 이용해서 스토리 단계 이동 가능
@@ -102,19 +102,19 @@ END
 ## 61. 대시보드 탐색
 
 <!-- 대시보드 탐색 강의에서 알게 된 점을 적어주세요 -->
-![img](/image/6th_week_image/61_1.png)
+![img](/image/7th_week_image/61_1.png)
 ```
 각 대시보드와 탐색 버튼 생성
 ```
 ![img]()
 <div style="display: flex;">
-  <img src="/image/6th_week_image/62_2.png" alt="이미지 1" style="margin-right: 10px;">
-  <img src="/image/6th_week_image/62_3.png" alt="이미지 2">
+  <img src="/image/7th_week_image/62_2.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/7th_week_image/62_3.png" alt="이미지 2">
 </div>
 ```
 탐색 버튼 활성화
 ```
-![img](/image/6th_week_image/61_4.png)
+![img](/image/7th_week_image/61_4.png)
 ```
 자유롭게 대시보드 이동 가능
 ```
@@ -123,19 +123,19 @@ END
 
 <!-- 태블로 단추 강의에서 알게 된 점을 적어주세요 -->
 시트 우클릭>표시/숨기기 단추 추가: Alt 키와 단추를 같이 누르면 표시/숨기기 변환
-![img](/image/6th_week_image/62_1.png)
+![img](/image/7th_week_image/62_1.png)
 ```
 각 그래프 별 표시/숨기기 단추 추가
 ```
-![img](/image/6th_week_image/62_2.png)
+![img](/image/7th_week_image/62_2.png)
 ```
 편집 단추를 통해 표시/숨기기 별 이미지 설정
 ```
-![img](/image/6th_week_image/62_3.png)
+![img](/image/7th_week_image/62_3.png)
 ```
 표시/숨기기 단추를 통해 표시할 그래프 설정 가능
 ```
-![img](/image/6th_week_image/62_4.png)
+![img](/image/7th_week_image/62_4.png)
 ```
 컨테이너에 표시/숨기기 단추 적용
 ```
@@ -146,11 +146,11 @@ END
 
 ### [배송 형태]-[범주]-[하위 범주] 순서로 이어지는 막대 그래프 생성
 #### [배송형태]-[범주] 드릴다운 생성
-![img](/image/6th_week_image/63_1.png)
+![img](/image/7th_week_image/63_1.png)
 ```
 배송형태별 매출 막대 그래프 생성
 ```
-![img](/image/6th_week_image/63_2.png)
+![img](/image/7th_week_image/63_2.png)
 ```
 매개 변수 Level 1 생성
 ```
@@ -161,22 +161,22 @@ THEN [범주]
 ELSE [배송 형태]
 END
 ```
-![img](/image/6th_week_image/63_3.png)
+![img](/image/7th_week_image/63_3.png)
 ```
 매개 변수 동작을 편집하여 배송 형태를 선택하면 범주로 드릴다운이 되는 동작 생성
 ```
-![img](/image/6th_week_image/63_4.png)
+![img](/image/7th_week_image/63_4.png)
 ```
 매출별로 내림차순 정렬
 ```
 ![img]()
 <div style="display: flex;">
-  <img src="/image/6th_week_image/63_5.png" alt="이미지 1" style="margin-right: 10px;">
-  <img src="/image/6th_week_image/63_6.png" alt="이미지 2">
+  <img src="/image/7th_week_image/63_5.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/7th_week_image/63_6.png" alt="이미지 2">
 </div>
 
 #### [배송형태]-[범주]-[하위 범주] 드릴다운 생성
-![img](/image/6th_week_image/63_7.png)
+![img](/image/7th_week_image/63_7.png)
 ```
 매개 변수 Level 2 생성
 ```
@@ -187,11 +187,11 @@ THEN [하위 범주]
 ELSE ''
 END
 ```
-![img](/image/6th_week_image/63_8.png)
+![img](/image/7th_week_image/63_8.png)
 ```
 매개 변수 동작을 편집하여 배송 형태를 선택하면 범주로 드릴다운이 되는 동작 생성
 ```
-![img](/image/6th_week_image/63_10.png)
+![img](/image/7th_week_image/63_10.png)
 ```
 매출별로 내림차순 정렬
 ```
@@ -204,18 +204,18 @@ THEN [범주]
 ELSE ''
 END
 ```
-![img](/image/6th_week_image/63_9.png)
+![img](/image/7th_week_image/63_9.png)
 
 ## 64. 트리맵 드릴다운
 
 <!-- 트리맵 드릴다운에 대해 알게 된 점을 적어주세요 -->
 ### [Category]-[Sub_Category]-[Manufacturer] 순서로 이어지는 트리맵 생성
 #### [Category]-[Sub_Category] 드릴다운 생성
-![img](/image/6th_week_image/64_1.png)
+![img](/image/7th_week_image/64_1.png)
 ```
 카테고리별 매출 트리맵 생성
 ```
-![img](/image/6th_week_image/64_2.png)
+![img](/image/7th_week_image/64_2.png)
 ```
 카테고리 집합 생성
 ```
@@ -226,15 +226,15 @@ IF [Category 집합] THEN [Sub-Category]
 ELSE [Category]
 END
 ```
-![img](/image/6th_week_image/64_3.png)
+![img](/image/7th_week_image/64_3.png)
 ```
 집합 동작을 편집하여 [Category]를 선택하면 [Sub-Category]로 드릴다운이 되는 동작 생성
 ```
 마크>레이블에 [드릴다운 1] 드래그&드롭
-![img](/image/6th_week_image/64_4.png)
+![img](/image/7th_week_image/64_4.png)
 
 #### [Category]-[Sub_Category]-[Manufacturer] 드릴다운 생성
-![img](/image/6th_week_image/64_5.png)
+![img](/image/7th_week_image/64_5.png)
 ```
 드릴다운 1에서 집합 생성
 ```
@@ -245,12 +245,12 @@ IF [드릴다운 1 집합] THEN [Manufacturer]
 ELSE ""
 END
 ```
-![img](/image/6th_week_image/64_6.png)
+![img](/image/7th_week_image/64_6.png)
 ```
 집합 동작을 편집하여 [Sub-Category]를 선택하면 [Manufacturer]로 드릴다운이 되는 동작 생성
 ```
 마크>레이블에 [드릴다운 2] 드래그&드롭
-![img](/image/6th_week_image/64_7.png)
+![img](/image/7th_week_image/64_7.png)
 
 #### 트리맵의 레이블이 중복되는 것을 방지하는 계산된 필드 생성
 ```
@@ -260,16 +260,16 @@ ELSE ""
 END
 ```
 마크>레이블에 [드릴다운 1 레이블] 드래그&드롭
-![img](/image/6th_week_image/64_8.png)
+![img](/image/7th_week_image/64_8.png)
 
 ## 65. 파이 차트 드릴다운
 <!-- 파일 차트 드릴다운에 대해 알게 된 점을 적어주세요 -->
 ### [Category]-[Sub_Category] 순서로 이어지는 파이차트 생성
-![img](/image/6th_week_image/65_1.png)
+![img](/image/7th_week_image/65_1.png)
 ```
 카테고리별 매출 파이차트 생성
 ```
-![img](/image/6th_week_image/65_2.png)
+![img](/image/7th_week_image/65_2.png)
 ```
 카테고리 집합 생성
 ```
@@ -280,7 +280,7 @@ IF [Category 집합] THEN [Sub-Category]
 ELSE [Category]
 END
 ```
-![img](/image/6th_week_image/65_3.png)
+![img](/image/7th_week_image/65_3.png)
 ```
 집합 동작을 편집하여 [Category]를 선택하면 [Sub_Category]로 드릴다운이 되는 동작 생성
 ```
@@ -294,15 +294,15 @@ END
 카테고리와 드릴다운 1 내림차순 정렬
 ```
 
-![img](/image/6th_week_image/65_6.png)
+![img](/image/7th_week_image/65_6.png)
 ---
-![img](/image/6th_week_image/65_7.png)
+![img](/image/7th_week_image/65_7.png)
 ```
 행 선반 더블클릭하여 임의의 축 생성 -> Ctrl 키 이용하여 하나 더 생성
 
 마크에서 드릴다운 1 색상 제거 후 크기 조정
 ```
-![img](/image/6th_week_image/65_8.png)
+![img](/image/7th_week_image/65_8.png)
 ```
 이중 축 생성
 ```
@@ -314,16 +314,16 @@ END
 ```
 두 번째 축의 마크>레이블에 [드릴다운 1 레이블] 드래그&드롭 <br>
 행 구분선/열 구분선/0 기준선/격자선 없음 처리, 머리글 해제
-![img](/image/6th_week_image/65_9.png)
+![img](/image/7th_week_image/65_9.png)
 
 ## 66. 지도 드릴다운
 <!-- 지도 드릴다운에 대해 알게 된 점을 적어주세요 -->
 ### [국가/지역]-[시/도] 순서로 이어지는 지도 그래프 생성
-![img](/image/6th_week_image/65_1.png)
+![img](/image/7th_week_image/65_1.png)
 ```
 국가/지역 맵 생성
 ```
-![img](/image/6th_week_image/65_2.png)
+![img](/image/7th_week_image/65_2.png)
 ```
 국가/지역 집합 생성
 ```
@@ -336,22 +336,22 @@ END
 
 *계산된 필드에 [지리적 역할]>[만들기 원본]>[시/도]로 지리적 역할 부여
 ```
-![img](/image/6th_week_image/65_3.png)
+![img](/image/7th_week_image/65_3.png)
 ```
 집합 동작을 편집하여 [국가/지역]을 선택하면 [시/도]로 드릴다운이 되는 동작 생성
 ```
 마크>색상에 [드릴다운 1] 드래그&드롭
 ![img]()
 <div style="display: flex;">
-  <img src="/image/6th_week_image/66_4.png" alt="이미지 1" style="margin-right: 10px;">
-  <img src="/image/6th_week_image/66_5.png" alt="이미지 2">
+  <img src="/image/7th_week_image/66_4.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/7th_week_image/66_5.png" alt="이미지 2">
 </div>
 ```
 국가별로 색상이 구분된 것과, 국가 클릭시 시/도 별로 드릴다운이 되는 것을 확인할 수 있다.
 ```
 
 ### 매개변수를 이용하여 드릴다운과 선택한 [국가/지역]만 필터링 되는 작업을 동시에 진행
-![img](/image/6th_week_image/66_6.png)
+![img](/image/7th_week_image/66_6.png)
 ```
 매개변수 생성
 ```
@@ -366,22 +366,22 @@ END
 ```
 매개변수 표시 이후, 매개변수 국가/지역>ALL 로 설정
 ```
-![img](/image/6th_week_image/66_7.png)
+![img](/image/7th_week_image/66_7.png)
 ```
 선택된 국가/지역 필드로 필터 생성>참 선택
 ```
-![img](/image/6th_week_image/66_8.png)
+![img](/image/7th_week_image/66_8.png)
 ```
 계산된 필드를 실행하는데 필요한 동작 생성
 ```
-![img](/image/6th_week_image/66_9.png)
+![img](/image/7th_week_image/66_9.png)
 ```
 도구 설명 편집: 국가/지역 삭제
 ```
 ![img]()
 <div style="display: flex;">
-  <img src="/image/6th_week_image/66_10.png" alt="이미지 1" style="margin-right: 10px;">
-  <img src="/image/6th_week_image/66_11.png" alt="이미지 2">
+  <img src="/image/7th_week_image/66_10.png" alt="이미지 1" style="margin-right: 10px;">
+  <img src="/image/7th_week_image/66_11.png" alt="이미지 2">
 </div>
 ```
 드롭다운을 실시할 때, 선택된 도시만 확대해서 필터링 됨과 동시에 드릴다운이 진행되며, 도구설명도 국가/지역에서 시/도로 변경되는 것을 확인
